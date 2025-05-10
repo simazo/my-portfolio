@@ -200,14 +200,26 @@ img {
 }
 
 .works-name {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   margin-top: 8px;
 }
 
 .works-info {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.works-skill {
+  font-size: 12px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.works-release {
   font-size: 10px;
   margin-top: 5px;
+  color: gray;
 }
 
 .title + .works-sub-tittle {

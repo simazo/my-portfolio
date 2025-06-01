@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='WebデザイナーF.T ポートフォリオ'>
+  <meta property='og:url' content='URLが入る'>
+  <meta property='og:description' content='F.Tのポートフォリオサイトです。'>
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="F.Tのポートフォリオサイトです" />
+  <title>F.T ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel=”canonical” href=”URLが入る” />
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- header -->
+    <header class="header ">
+      <div class="container">
+        <h1 class="header-logo">
+          <a href=".">F.T</a>
+        </h1>
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href="./#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="./#skill">SKILL</a></li>
+            <li class="gnav-item"><a href=".#works">WORKS</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+
+      <article class="article">
+        <div class="article-container">
+          <h2 class="article-title">DevQuizz</h2>
+          <div class="article-body">
+            <p>
+              <img src="img/devquiz.png" alt="">
+            </p>
+            <p>
+              開発現場で直面する課題への対応力を高めるためのクイズアプリです。知識よりも判断や設計の思考プロセスに重きを置いています。
+            </p>
+            <h3>使用技術</h3>
+            <p>
+              ・TypeScript <br>
+              ・React<br>
+              ・Fastify<br>
+              ・Chakra UI<br>
+              ・Vercel<br>
+              ・supabase<br>
+              ・クリーンアーキテクチャ<br>
+            </p>
+            <h3>URL</h3>
+            <p><a href="https://DevQuizz.com" target="_blank" rel="noopener">https://DevQuizz.com</a></p>
+            <h3>リポジトリ</h3>
+            <p><a href="https://github.com/simazo/DevQuizz" target="_blank" rel="noopener">https://github.com/simazo/DevQuizz</a></p>
+            <h3>背景</h3>
+            <p>クイズ形式で開発現場の課題を擬似体験し、繰り返し考えることで、実践的なスキルを高められると考えて作りました。</p>
+            <h3>サービスの目的</h3>
+            <p>現場で起きる問題に対して、自ら考え、適切なアプローチを選べるようになること。</p>
+            <h3>ターゲット</h3>
+            <p>私のような半人前のWebエンジニア（特にバックエンド志向）、設計に関心のある開発者。</p>
+            <h3>機能</h3>
+            <p>
+              ・カテゴリごとにクイズ出題<br>
+              ・カテゴリは、「デザインパターン」「アーキテクチャ」「設計哲学」「リファクタリング」から選択<br>
+              ・スコア採点<br>
+              ・回答履歴の取得
+            </p>
+            <h3>苦労した点</h3>
+            <p>
+              出題方式の設計に悩みました。当初は1問ずつ出題・採点する構成を想定していましたが、セッション管理は過剰で、独自クラスでの状態管理も煩雑になりました。<br>なので最終的には、開始時にまとめて問題を取得し、終了時に回答セットを送信して採点するシンプルな方式に落ち着きました。
+            </p>
+            <h3>工夫した点</h3>
+            <p>
+              ・問題をランダムに出題したいのですが、supabaseクライアントがRANDOM()が使えなかったため、PostgreSQLにストアドファンクションを作って対応しました。<br>
+            </p>
+          </div>
+          <div class="home-link">
+            <a href="./#works">Works一覧へ</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;F.T</div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+</body>
+</html>
